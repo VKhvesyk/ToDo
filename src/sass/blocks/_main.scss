@@ -1,0 +1,100 @@
+.main {
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__subheader {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        select {
+            height: 30px;
+            width: 145px;
+            border-radius: 5px;
+        }
+    }
+    &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        height: 150px;
+        position: relative;
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            height: 150px;
+            width: 100%;
+            left: 0;
+            top: 0;
+            filter: blur(2px);
+            background-image: url('../img/backround.jpg');
+            z-index: -1;
+        }
+        h2 {
+            margin-top: 55px;
+            font-size: 24px;
+            color: white;
+            text-transform: uppercase;
+        }
+        input {
+            padding: 0px 45px 0px 15px;
+            border: none;
+            border-radius: 5px;
+            height: 40px;
+            width: 300px;
+        }
+        span {
+            position: absolute;
+            padding: 7px 6px;
+            width: 40px;
+            height: 40px;
+            background-color: lightgrey;
+            transform: translateX(-100%);
+            border-radius: 5px;
+            cursor: pointer;
+            &:hover {
+                background-color: lightgreen;
+            }
+        }
+    }
+    &__todos {
+        max-height: 500px;
+        overflow-y: auto;
+        li {
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 45px 0px 15px;
+            width: 300px;
+            height: 40px;
+            background-color: white;
+            border-radius: 5px;
+            margin-top: 5px;
+            list-style-type: none;
+            align-items: center;
+            h3 {
+                margin: 0px;
+                cursor: pointer;
+            }
+            span {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: -45px;
+                width: 40px;
+                height: 40px;
+                font-size: 16px;
+                color: black;
+                font-weight: 300;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: 0.3s all;
+                &:hover {
+                    background-color: red;
+                }
+            }
+        }
+    }
+}

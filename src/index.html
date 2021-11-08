@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="main-wrapper">
+                <div class="main__header">
+                    <div>
+                        <div class="main__subheader">
+                            <h2>To Do list</h2>
+                            <select name="source" class="main__task-selector">
+                                <option value="local">Local task</option>
+                                <option value="remote">Task from server</option>
+                            </select>
+                        </div>
+                        <input class="main__user-input" type="text" placeholder="Typing your to do">
+                        <span class="main__add-button">Add</span>
+                    </div>
+                </div>
+                <ul class="main__todos">
+                    
+                </ul>
+            </div>
+        </div>
+
+    <div class="todo-card">
+        <div class="todo-card__detail">
+            <h3 class="todo-card__timestamp"></h3>
+            <p class="todo-card__descr"></p>
+            <span class="todo-card__close"></span>
+        </div>
+        
+    </div>
+    <div class="todo-card__overlay"></div>
+
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
